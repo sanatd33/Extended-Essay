@@ -159,7 +159,7 @@ public class Grid {
         ig2.drawLine(0,img_height - stroke_size / 2, img_width, img_height - stroke_size / 2);
         ig2.drawLine(img_width - stroke_size / 2, 0, img_width - stroke_size / 2, img_height);
 
-        ImageIO.write(bi, "PNG", new File("Main/src/Output/maze.png"));
+        ImageIO.write(bi, "PNG", new File("Main/src/Output/maze1.png"));
     }
 
     public void toColorized() throws IOException {

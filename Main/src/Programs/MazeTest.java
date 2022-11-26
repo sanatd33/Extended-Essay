@@ -10,19 +10,19 @@ import java.io.IOException;
 public class MazeTest {
 
     public static void main(String[] args) throws IOException {
-        Grid grid = new Grid(3, 3);
-//        AldousBroder.on(grid);
+        Grid grid = new Grid(100, 100);
+        AldousBroder.on(grid);
 //        System.out.println(grid);
 //        System.out.println(grid);
-        grid.toImage();
+//        grid.toImage();
 //        grid.toColorized();
 //        grid.toTree();
-//        DistanceGrid g = DistanceGrid.fromGrid(grid);
+        DistanceGrid g = DistanceGrid.fromGrid(grid);
 //        WallFollower.on(g);
-//        g.toImage();
-//        DFS.on(g);
-////        System.out.println(g);
-//        g.toImage();
+//        g.toImage();/
+        DFS.on(g);
+//        System.out.println(g);
+        g.toImage();
 //        g.toColorized(2);
 //        DistanceGrid g2 = DistanceGrid.fromGrid(grid);
 //        BFS.on(g2);

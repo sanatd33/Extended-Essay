@@ -12,7 +12,7 @@ public class SolvingTimeTest {
     public static void main(String[] args) throws IOException {
         for (int j = 0; j < 5; j++) {
             for (int i = -15; i < 1000; i++) {
-                DistanceGrid grid = new DistanceGrid(100, 100);
+                DistanceGrid grid = new DistanceGrid(200, 200);
                 if (j == 0) {
                     BinaryTree.on(grid);
                 }
